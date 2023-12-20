@@ -1,0 +1,23 @@
+---
+package-name:  apache-airflow-providers-normalizer
+name: Normalizer
+description: |
+    `Normalize json to nested tables by yaml specification <https://github.com/woodocat/apache-airflow-providers-normalizer>`__
+
+versions:
+  - 1.0.0
+
+additional-dependencies:
+  - apache-airflow>=2.1.0
+
+integrations:
+  - integration-name: Normalizer
+    external-doc-url: https://github.com/woodocat/apache-airflow-providers-normalizer
+    how-to-guide:
+      - https://github.com/woodocat/apache-airflow-providers-normalizer
+    tags: [software]
+
+operators:
+  - integration-name: Normalizer
+    python-modules:
+      - airflow.providers.normalizer.operators.normalizer

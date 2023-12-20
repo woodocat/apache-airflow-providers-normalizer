@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apache-airflow-providers-normalizer"
+version = "1.0.0"
+authors = [
+  { name="woodocat", email="woodocat@gmail.com" },
+]
+description = "Provider for Apache Airflow. Implements json normalization to nested tables by yaml specification"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "apache-airflow>=2.1.0",
+    "pyyaml",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Framework :: Apache Airflow",
+    "Framework :: Apache Airflow :: Provider",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/woodocat/apache-airflow-providers-normalizer"
+"Bug Tracker" = "https://github.com/woodocat/apache-airflow-providers-normalizer/issues"
